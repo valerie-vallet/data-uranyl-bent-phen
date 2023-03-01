@@ -1,9 +1,11 @@
 # Geometries with other functionals and crystal geometries
-**/geom-pbe0-d3-water/
-**/geom-wB97X-gp/
-**/geom-camb3lyp-gp/
-**/geom-b3lyp-gp/
-**/geom-crystal/
+geom-pbe0-d3-water/
+geom-wB97X-gp/
+geom-camb3lyp-gp/
+geom-b3lyp-gp/
+geom-crystal/
+geom-uo2_4cl/
+NBO/
 
 # QZ4P files
 *QZ4P*
@@ -12,7 +14,12 @@
 # AMS files
 *.ams
 *.pid
-**/*.results/
+*.results
+
+# QTAIM subresults
+*_atomicfiles/
+*.extout
+*.txt
 
 # Gaussian checkpoint files
 *.chk*
