@@ -12,7 +12,7 @@
 # AMS files
 *.ams
 *.pid
-**/*.results
+#*.results
 
 # Gaussian checkpoint files
 *.chk*
