@@ -1,0 +1,46 @@
+#!/bin/sh
+
+"$AMSBIN/ams" << eor
+
+Task SinglePoint
+System
+    Atoms
+        O 10.674656 7.648 -1.349928 
+        Cl 13.249435 5.715503 -1.17479 
+        Cl 13.249435 9.580496999999999 -1.17479 
+        Cl 10.408565 5.715503 1.17479 
+        Cl 10.408565 9.580496999999999 1.17479 
+        O 12.983344 7.648 1.349928 
+        U 11.829 7.648 0.0 
+    End
+    Charge -2
+    BondOrders
+         7 1 1.0
+         7 2 1.0
+         7 3 1.0
+         7 4 1.0
+         7 5 1.0
+         7 6 1.0
+    End
+End
+
+Engine ADF
+    Basis
+        Type TZ2P
+        Core None
+    End
+    XC
+        libxc CAM-B3LYP
+    End
+    Symmetry NOSYM
+    Excitations
+        Lowest 16
+        NTO Yes
+        Davidson
+        End
+        FullKernel Yes
+    End
+    NumericalQuality Good
+EndEngine
+eor
+
