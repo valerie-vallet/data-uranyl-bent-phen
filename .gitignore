@@ -3,9 +3,13 @@ geom-pbe0-d3-water/
 geom-wB97X-gp/
 geom-camb3lyp-gp/
 geom-b3lyp-gp/
-geom-crystal/
+geom-crystal*/
+geom-tecmer/
 geom-uo2_4cl/
+geom-denning/
+optg-gp/
 NBO/
+dirac/
 
 # QZ4P files
 *QZ4P*
