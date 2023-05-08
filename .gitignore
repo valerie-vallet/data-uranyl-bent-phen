@@ -14,9 +14,11 @@ dirac/
 # QZ4P files
 *QZ4P*
 *VQZP*
+*TZ2P-DZP*
 
 # Unfinished ADF calculations
 em-uo2cl2phen2.tddft-TDA-camb3lyp*
+
 # AMS files
 *.ams
 *.pid
@@ -35,3 +37,5 @@ em-uo2cl2phen2.tddft-TDA-camb3lyp*
 *.sh
 *.slurm
 
+# TIFF plots
+*.tiff
